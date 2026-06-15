@@ -1,0 +1,13 @@
+{
+  "id": "backend_serve_links",
+  "name": "Serve Links",
+  "version": "1.0.2",
+  "type": "general",
+  "description": "通过 qwenpaw 核心 FastAPI 在 /api/serve_links/ 下暴露 .qwenpaw 目录下路径/文件的服务",
+  "author": "马-CHUAN",
+  "entry": {
+    "backend": "plugin.py"
+  },
+  "dependencies": ["fastapi"],
+  "min_version": "1.1.5"
+}

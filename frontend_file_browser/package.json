@@ -1,0 +1,10 @@
+{
+  "name": "frontend_file_browser",
+  "version": "1.0.0",
+  "scripts": { "build": "vite build" },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "typescript": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
+  }
+}

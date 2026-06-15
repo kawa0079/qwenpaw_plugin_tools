@@ -1,0 +1,8 @@
+{
+  "id": "frontend_file_browser",
+  "name": "File Browser",
+  "version": "1.0.0",
+  "description": "QwenPaw 文件浏览器插件 — 分层级浏览 .qwenpaw 目录下的文件和目录",
+  "author": "马-CHUAN",
+  "entry": { "frontend": "dist/index.js" }
+}
