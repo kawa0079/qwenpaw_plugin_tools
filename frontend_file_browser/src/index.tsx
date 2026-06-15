@@ -4,7 +4,7 @@ const { React, antd } = (window as any).QwenPaw.host;
 const { useState, useEffect, useCallback, useMemo } = React;
 const { Card, Input, Alert, Button, Empty, Spin, Tooltip, Breadcrumb } = antd;
 
-const BASE = "http://127.0.0.1:8088/api/serve_links";
+const BASE = "/api/serve_links";
 const HEALTH_URL = `${BASE}/health`;
 
 /* ------------------------------------------------------------------ */
@@ -308,7 +308,7 @@ function FileBrowser() {
         <Alert
           type="error"
           showIcon
-          message="无法连接后端服务 (127.0.0.1:8088/api/serve_links)"
+          message="无法连接后端服务 (/api/serve_links)"
           description={
             <div>
               <p>请确认服务已启动。</p>

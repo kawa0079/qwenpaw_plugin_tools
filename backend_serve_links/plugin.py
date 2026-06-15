@@ -19,20 +19,8 @@ class ServeLinksPlugin:
         """
         logger.info("Registering Serve Links plugin...")
 
-        # 1. 启动时校验目录 & 注册 HTTP 路由
-        def startup_hook():
-            from .serve_links import validate_raw_links_dir
-            validate_raw_links_dir()
-
-        api.register_startup_hook(
-            hook_name="serve_links_validate",
-            callback=startup_hook,
-            priority=0,
-        )
-
-        # 2. 将 APIRouter 挂载到 /api/serve_links/ 下
+        # 启动时将 APIRouter 挂载到 /api/serve_links/ 下
         from .serve_links import build_router
-
         api.register_http_router(
             build_router(),
             prefix="/serve_links",
