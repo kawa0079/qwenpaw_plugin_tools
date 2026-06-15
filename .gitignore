@@ -145,3 +145,4 @@ vite.config.ts.timestamp-*
 # other build dir/files
 dist/
 dist-ssr/
+.git
